@@ -1,0 +1,31 @@
+.setting-bar__column h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.settings__setting {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings-list {
+  margin-top: -10px;
+  padding-bottom: 25px;
+  border-bottom: var(--main-border);
+  font-size: 18px;
+}
+
+.settings__setting i {
+  margin-right: 13px;
+  font-size: 20px;
+}
+
+.settings-setting__column:last-child {
+  opacity: 0.6;
+}

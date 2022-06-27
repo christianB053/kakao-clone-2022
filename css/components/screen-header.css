@@ -1,0 +1,45 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px var(--horizontal-space) 30px var(--horizontal-space);
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+@keyframes rotateIconsAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.screen-header__icons i:hover {
+  animation: rotateIconsAnimation 1s ease-in;
+}
+
+.screen-header__icons-gear-dot {
+  background-color: tomato;
+  height: 5px;
+  width: 5px;
+  border-radius: 2.5px;
+  position: absolute;
+  right: 18px;
+  top: 50px;
+}
